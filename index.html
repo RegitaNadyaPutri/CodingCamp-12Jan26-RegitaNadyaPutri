@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Latihan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="logo">
+            <img src="img/Logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#welcome-text">Home</a>
+            <a href="ourprofile.html">Our Profile</a>
+            <a href="OurMenu.html">Our Menu</a>
+            <a href="#message-us">Message Us</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" >
+        <h1 id="welcome-text">Hi Guest, Selamat Datang di website Buna Gatto </h1>
+        <p>Buna Gatto hadir sejak 15 Januari 2026 sebagai ruang pertemuan antara alam, kopi, dan kasih sayang. Mengambil inspirasi dari 
+            Buna—istilah kopi dari bahasa Ethiopia, dan Gatto yang artinya kucing dari bahasa Italia, kami membangun sebuah ruang bertema alam. Di Buna Gatto, kami percaya bahwa perpaduan antara aroma kopi yang autentik dan kehadiran kucing di tengah suasana natural adalah obat terbaik untuk hari Anda.</p>
+
+        <div class="banner-placeholder">
+            <img src="img/Banner.png" alt="Banner">
+        </div>
+    </header>
+
+    <!-- HEADQUARTER -->
+    <section class="headquarters">
+        <h2>Offline Store</h2>
+        <div class="hq-container">
+            <div class="hq-item">
+                <div class="circle" >
+                </div>
+                <p>Jakarta</p>
+            </div>
+            <div class="hq-item">
+                <div class="circle"></div>
+                <p>Bandung</p>
+            </div>
+            <div class="hq-item">
+                <div class="circle"></div>
+                <p>Surabaya</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MESSAGE US -->
+<section class="message-us" id="message-us">
+    <h2>Message Us</h2>
+
+    <div class="message-container">
+
+        <!-- FORM INPUT -->
+        <div class="form-box" id="formBox">
+            <form id="messageForm">
+
+                <label>Nama</label>
+                <input type="text" id="input-name" required>
+
+                <label>Tanggal Lahir</label>
+                <input type="date" id="input-birthdate" required>
+
+                <label>Jenis Kelamin</label>
+                <div class="radio-group">
+                    <label class="radio-item">
+                        <input type="radio" name="gender" value="Laki-laki" checked>
+                        <span class="custom-radio"></span>
+                        <span class="radio-text">Laki-laki</span>
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="radio" name="gender" value="Perempuan">
+                        <span class="custom-radio"></span>
+                        <span class="radio-text">Perempuan</span>
+                    </label>
+                </div>
+
+                
+                
+
+                <label>Pesan</label>
+                <textarea id="input-message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- OUTPUT (AWALNYA TERSEMBUNYI) -->
+        <div class="result-box hidden" id="resultBox">
+            <h3>Message Sent ✅</h3>
+            <p><b>Nama:</b> <span id="popup-name"></span></p>
+            <p><b>Tanggal Lahir:</b> <span id="popup-birthdate"></span></p>
+            <p><b>Jenis Kelamin:</b> <span id="popup-gender"></span></p>
+            <p><b>Pesan:</b> <span id="popup-message"></span></p>
+
+            <button id="backToForm">Kirim Pesan Baru</button>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        Created by Regita
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
